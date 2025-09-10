@@ -42,9 +42,11 @@ This README documents **all the steps followed**, including:
    - Index → `main`
 4. Verified that Splunk indexed the events successfully.
 
-![alt text](file-upload-splunk.png)
 
-![alt text](File-credentials-splunk.png)
+<img width="3200" height="2000" alt="file-upload-splunk" src="https://github.com/user-attachments/assets/5fe7d323-7d8c-47ac-a722-53b4c1301b5f" />
+
+<img width="1609" height="1159" alt="File-credentials-splunk" src="https://github.com/user-attachments/assets/76e6e4b8-828c-463f-9971-d4fe836b7880" />
+
 ---
 
 ## **Basic Searches**
@@ -58,10 +60,8 @@ index=main sourcetype="future-interns-01"
 Shows the first 5 events in the dataset.
 By default splunk sorts based on the timestamp.
 
-![alt text](Top5-s2.png)
-
+<img width="3200" height="2000" alt="Top5-s2" src="https://github.com/user-attachments/assets/c7ed7992-548e-4fcb-9b65-62b532798979" />
 ---
-
 ### 2. Display first 10 logs in a table
 ```spl
 index=main sourcetype="future-interns-01"
@@ -81,7 +81,7 @@ index=main sourcetype="future-interns-01"
 **Purpose:**  
 Gives a quick count of total events processed by Splunk.
 
-![alt text](Total-events-s1.png)
+<img width="3200" height="1200" alt="Total-events-s1" src="https://github.com/user-attachments/assets/5e212fb3-fe86-4264-809a-22496d2cf3bc" />
 
 ---
 
@@ -106,7 +106,8 @@ index=main sourcetype="future-interns-01"
 ```
 **Purpose:**  
 Displays total logins, successful logins, and failed logins side-by-side.
-![alt text](logins-success-failed.png)
+<img width="3200" height="1360" alt="logins-success-failed" src="https://github.com/user-attachments/assets/437558ab-80f7-47f4-99a5-26062845974c" />
+
 ---
 
 ## **IP and User-Based Analysis**
@@ -155,7 +156,8 @@ index=main sourcetype="future-interns-01" "malware detected"
 ```
 **Purpose:**  
 Filters logs to only malware-related activity.
-![alt text](all-malware-events-s5.png)
+<img width="3200" height="2000" alt="all-malware-events-s5" src="https://github.com/user-attachments/assets/418a1c4d-22ef-4ac3-959a-a75ab8e4b992" />
+
 ---
 
 ### 10. Count malware events by IP
@@ -168,7 +170,9 @@ index=main sourcetype="future-interns-01" "malware detected"
 ```
 **Purpose:**  
 Identifies which IPs are most frequently associated with malware.
-![alt text](Malware-infected-ips-s6.png)
+
+<img width="3200" height="1648" alt="Malware-infected-ips-s6" src="https://github.com/user-attachments/assets/02350bdd-cee9-478b-a097-270e610ff79f" />
+
 ---
 
 ### 11. Malware vs Login Failures by IP
@@ -182,7 +186,8 @@ index=main sourcetype="future-interns-01"
 ```
 **Purpose:**  
 Shows how many malware detections and login failures occurred per IP.
-![alt text](Correlate-Malware-with-Login-Failures.png)
+<img width="3200" height="2000" alt="Correlate-Malware-with-Login-Failures" src="https://github.com/user-attachments/assets/f4bb4ca6-5cd4-4cc9-93ac-75d8134a3ddf" />
+
 ---
 
 ### 12. Threats grouped by type
@@ -200,7 +205,7 @@ index=main sourcetype="future-interns-01"
 ```
 **Purpose:**  
 Categorizes and counts threats by their type.
-![alt text](Threat-summary.png)
+<img width="3200" height="2000" alt="Threat-summary" src="https://github.com/user-attachments/assets/e9c73045-1e5d-4be8-a46f-7f081e76c29d" />
 ---
 
 ## **Advanced Searches**
@@ -224,7 +229,8 @@ index=main sourcetype="future-interns-01"
 ```
 **Purpose:**  
 Visualizes failed login attempts over time.
-![alt text](Timeline-of-all-events.png)
+<img width="3200" height="2000" alt="Timeline-of-all-events" src="https://github.com/user-attachments/assets/c12e4268-611a-4f09-bebe-d8380b35531c" />
+
 ---
 ### 
 
@@ -244,8 +250,7 @@ It’s useful for understanding how many distinct systems interacted with the ne
 Displays a single number representing unique IPs.
 
 **Screenshot Reference:**
-![alt text](Unique-ips-s3.png)
-
+<img width="3200" height="1080" alt="Unique-ips-s3" src="https://github.com/user-attachments/assets/0da2f9af-75d7-43a9-a102-60ac6ead820f" />
 
 ### **📊 Dashboards and Visualizations**
 ### 1. Threats with percentage
@@ -265,7 +270,8 @@ index=main sourcetype="future-interns-01"
 ```
 **Purpose:**  
 Displays total count and percentage of each threat type.
-![alt text](threatSummary-pieChart.png)
+<img width="3200" height="2000" alt="threatSummary-pieChart" src="https://github.com/user-attachments/assets/0a9d7eb5-5e7c-4122-a058-961d229acdf4" />
+
 ---
 #### 2. Top IPs with Malware Events (Column Chart)**
 **SPL Query:**
@@ -286,7 +292,7 @@ It assists in focusing investigations on potentially compromised hosts or extern
 * **Field on Y-axis:** `count`
 
 **Screenshot Reference:**
-![alt text](top-ips-with-malwares-columnChart.png)
+<img width="3200" height="2000" alt="top-ips-with-malwares-columnChart" src="https://github.com/user-attachments/assets/52c6c344-956f-4af8-a094-c357abb13d27" />
 
 ---
 
@@ -308,7 +314,9 @@ This chart displays login successes and failures over time, helping SOC analysts
 * **Fields for Y-axis:** `Successful_Logins` and `Failed_Logins`
 
 **Screenshot Reference:**
-![alt text](logins-lineChart.png)
+
+<img width="3200" height="2000" alt="logins-lineChart" src="https://github.com/user-attachments/assets/b6f0ee6a-a281-4b49-90a0-2269b7da6c18" />
+
 ---
 
 
@@ -340,7 +348,8 @@ This makes search and analysis much easier.
 ---
 
 This content will perfectly integrate into your README. It documents both **queries** and **dashboards** along with **purpose and visual references**.
-![alt text](Adding-extractions.png)
+
+<img width="3200" height="2000" alt="Adding-extractions" src="https://github.com/user-attachments/assets/2f943dce-1466-434c-b584-c115f53bc531" />
 
 ## **Final Findings**
 - Total logs analyzed: 50  
